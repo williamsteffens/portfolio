@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -12,6 +10,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -28,10 +30,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Hide scrollbar */
+/* Apply to any scrollable element */
+html, 
+body {
+  overflow: auto;              /* enable scrolling */
+  -ms-overflow-style: none;    /* IE and Edge */
+  scrollbar-width: none;       /* Firefox */
+}
+/* Chrome, Safari, Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0; */
 }
 
 a {

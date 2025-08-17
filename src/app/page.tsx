@@ -75,7 +75,7 @@ export default function Home() {
             {/* Intro Section */}
             <section className="h-screen flex flex-col justify-center items-center text-center">
                 <h1 className="text-4xl md:text-6xl font-bold">
-                    Hi, I'm Will
+                    Hi, I&apos;m Will
                 </h1>
                 <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-400">
                     Software Developer building full-stack web apps.
@@ -104,7 +104,7 @@ export default function Home() {
                     About Me
                 </h2>
                 <p className="text-gray-700 dark:text-gray-300">
-                    I’m a software engineer who loves building web apps with modern stacks. I focus on React, Node.js, and REST APIs.
+                    I&apos;m a software engineer who loves building web apps with modern stacks. I focus on React, Node.js, and REST APIs.
                 </p>
             </section>
 

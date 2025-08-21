@@ -76,11 +76,11 @@ export default function Home() {
 
     
     return (
-        <main className="flex flex-col items-center px-4 md:px-12 max-w-7xl mx-auto snap-y snap-mandatory">
+        <main className="flex flex-col items-center px-4 md:px-12 max-w-7xl mx-auto">
             {/* Intro Section */}
             <section className="h-screen flex flex-col justify-center items-center text-center">
                 <h1 className="text-4xl md:text-6xl font-bold">
-                    Hi, I&apos;m Will
+                    Hi, I&apos;m Will!
                 </h1>
                 <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-400">
                     Software Developer building full-stack web apps.
@@ -89,12 +89,12 @@ export default function Home() {
                     View My Work
                 </a> */}
                 <div className="h-4" />
-                <div className="flex flex-col justify-center mt-8">
+                <div className="flex flex-col justify-center gap-1 mt-8">
                     {sections.map((section) => (
                         <a
                             key={section.id}
                             href={`#${section.id}`}
-                            className="p-4 text-7xl w-120 font-semibold text-white shadow-lg hover:bg-[var(--amber-medium)] transition-all duration-200"
+                            className="p-4 text-7xl w-120 font-semibold text-white hover:bg-[var(--amber-medium)] border-2 border-transparent hover:border-[var(--amber-white)] transition-all duration-200"
                         >
                             {section.label}
                         </a>
@@ -108,13 +108,29 @@ export default function Home() {
                 <h2 className="text-3xl font-bold mb-4">
                     About Me
                 </h2>
-                <p className="text-gray-700 dark:text-gray-300 gradient-border-left">
+                <p className="text-lg text-gray-700 dark:text-gray-300 gradient-border-left">
                     I'm software engineer who loves building clean, efficient, and user-friendly digital experiences. I enjoy turning ideas into functional products, experimenting with new technologies, and crafting side projects that challenge my skills.
                     
                     Hi, I'm Savvas, a software engineer passionate about building clean, efficient, and user-friendly digital experiences. I enjoy turning ideas into functional products, exploring modern tech stacks, and continuously learning new tools to solve real-world problems. When I’m not coding, you can find me experimenting with new tech, reading, or designing small side projects that challenge my skills.
                     <br /><br />
                     When I'm not coding, you can find me exploring the outdoors, reading about tech trends, or playing video games.
                 </p>
+                <div className="mt-8 flex gap-4">
+                    <a
+                        href="/files/cv_william_steffens.pdf"
+                        download
+                        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                    >
+                        Download CV
+                    </a>
+                    <a
+                        href="/files/your-certificates.pdf"
+                        download
+                        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                    >
+                        Download Certificates
+                    </a>
+                </div>
             </section>
 
             {/* Projects */}

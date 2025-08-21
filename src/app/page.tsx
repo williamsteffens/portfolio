@@ -94,7 +94,7 @@ export default function Home() {
                         <a
                             key={section.id}
                             href={`#${section.id}`}
-                            className="p-4 text-7xl w-120 font-semibold text-white shadow-lg hover:bg-blue-700 transition-all duration-200"
+                            className="p-4 text-7xl w-120 font-semibold text-white shadow-lg hover:bg-[var(--amber-medium)] transition-all duration-200"
                         >
                             {section.label}
                         </a>
@@ -104,12 +104,16 @@ export default function Home() {
             </section>
       
             {/* About */}
-            <section id="about" className="h-screen snap-start py-20 flex flex-col justify-center">
+            <section id="about" className="h-screen snap-start py-20">
                 <h2 className="text-3xl font-bold mb-4">
                     About Me
                 </h2>
-                <p className="text-gray-700 dark:text-gray-300">
-                    I&apos;m a software engineer who loves building web apps with modern stacks. I focus on React, Node.js, and REST APIs.
+                <p className="text-gray-700 dark:text-gray-300 gradient-border-left">
+                    I'm software engineer who loves building clean, efficient, and user-friendly digital experiences. I enjoy turning ideas into functional products, experimenting with new technologies, and crafting side projects that challenge my skills.
+                    
+                    Hi, I'm Savvas, a software engineer passionate about building clean, efficient, and user-friendly digital experiences. I enjoy turning ideas into functional products, exploring modern tech stacks, and continuously learning new tools to solve real-world problems. When I’m not coding, you can find me experimenting with new tech, reading, or designing small side projects that challenge my skills.
+                    <br /><br />
+                    When I'm not coding, you can find me exploring the outdoors, reading about tech trends, or playing video games.
                 </p>
             </section>
 
@@ -120,6 +124,7 @@ export default function Home() {
                     Projects
                 </h2>
 
+                {/* Search and Filter */}
                 <input
                     type="text"
                     placeholder="Search by title or tech..."
@@ -128,6 +133,7 @@ export default function Home() {
                     className="mb-8 w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
+                {/* Tags Filter */}
                 <div className="mb-6 flex flex-wrap gap-2">
                     {tags.map((tag) => {
                         const active = selectedTags.includes(tag);
@@ -156,7 +162,8 @@ export default function Home() {
                     )}
                     </div>
 
-                <div className="grid gap-8 md:grid-cols-2">
+                {/* Project Cards */}
+                <div className="grid gap-8 md:grid-cols-3">
                     {filteredProjects.length > 0 ? (
                         filteredProjects.map((project, idx) => (
                             <ProjectCard key={idx} {...project} />

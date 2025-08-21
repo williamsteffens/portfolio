@@ -22,6 +22,11 @@ const projects = [
         tech: ["Next.js", "MongoDB", "Auth"],
         github: "https://github.com/yourname/todo-app",
     },
+    {
+        title: "Portfolio Website",
+        description: "My personal portfolio showcasing projects and skills.",
+        tech: ["Next.js", "Tailwind", "React"],   
+    }
 ];
 type Project = (typeof projects)[number];
 

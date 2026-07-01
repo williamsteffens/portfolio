@@ -1,0 +1,35 @@
+[
+    {
+        "id": "01",
+        "title": "LEDGERLINE",
+        "tag": "Distributed ledger reconciliation engine",
+        "stack": [
+            "Go",
+            "Postgres",
+            "Kafka"
+        ],
+        "desc": "Rebuilt a bank's overnight settlement pipeline to run incrementally instead of nightly — cut reconciliation time from 6 hours to 40 minutes across 14 currencies."
+    },
+    {
+        "id": "02",
+        "title": "FIELDNOTE",
+        "tag": "Offline-first survey toolkit",
+        "stack": [
+            "React Native",
+            "CRDT",
+            "SQLite"
+        ],
+        "desc": "Conflict-free sync layer for researchers working without signal. Used across nine field stations to merge edits from 40+ devices with zero data loss."
+    },
+    {
+        "id": "03",
+        "title": "ROUTEMARK",
+        "tag": "Internal developer platform",
+        "stack": [
+            "TypeScript",
+            "Kubernetes",
+            "Terraform"
+        ],
+        "desc": "Self-service deploy tooling that took a 12-step runbook down to one command, and cut average lead time for change from two days to under an hour."
+    }
+]

@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 :root {
   --text: #6b6375;
@@ -12,6 +14,9 @@
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+    --line:#9B9582; 
+    --line-soft:#e5e4e7;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -52,22 +57,80 @@
   }
 }
 
-body {
-  margin: 0;
-}
-
 #root {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  /* text-align: center; */
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body bg-paper text-ink dark:bg-dark-bg dark:text-paper;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Blueprint grid — the signature full-page device */
+  .grid-field line {
+    stroke: rgba(27, 36, 51, 0.1);
+    stroke-width: 0.06;
+  }
+
+  .dark .grid-field line {
+    stroke: rgba(239, 233, 219, 0.05);
+  }
+}
+
+@layer components {
+  /* Crop mark corners on project cards */
+  .crop-mark {
+    @apply absolute w-3 h-3 border-rust;
+  }
+  .crop-tl {
+    @apply top-0 left-0 border-t-2 border-l-2;
+  }
+  .crop-tr {
+    @apply top-0 right-0 border-t-2 border-r-2;
+  }
+  .crop-bl {
+    @apply bottom-0 left-0 border-b-2 border-l-2;
+  }
+  .crop-br {
+    @apply bottom-0 right-0 border-b-2 border-r-2;
+  }
+
+  /* Section divider rule */
+  .section-rule {
+    @apply border-t-2 border-ink dark:border-dark-border;
+  }
+
+  /* Stat row in mono */
+  .meta-row {
+    @apply flex justify-between border-b border-dashed border-line dark:border-dark-border py-1.5 text-xs font-mono;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
 h1,
 h2 {
   font-family: var(--heading);
@@ -110,4 +173,4 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
+} */

@@ -1,8 +1,13 @@
 import Eyebrow from "../components/layout/Eyebrow";
 
 const experience = [
-    { year: "2020", title: "Software Engineer", desc: "Worked on various projects involving React and Node.js." },
-    { year: "2018", title: "Junior Developer", desc: "Assisted in developing and maintaining web applications." },
+    {
+        year: "2022",
+        title: "Student Software Engineer – Continia", 
+        desc: "Developed and maintained features for document capture solutions. \
+            Collaborated with cross - functional teams to deliver new functionality and improvements. \
+            Contributed to bug fixes, testing, and code reviews in an agile development environment." 
+    },
 ];
 
 export default function Experience() {

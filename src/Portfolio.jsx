@@ -1,4 +1,5 @@
 import useTheme from "./hooks/useTheme";
+import Layout from "./components/layout/SimpleBar";
 import GridField from "./components/layout/GridField";
 import TopBar from './components/TopBar';
 import Hero from "./sections/Hero";
@@ -14,20 +15,22 @@ const Portfolio = () => {
 
     return (
         <>
-            <GridField />
-            
-            <TopBar theme={theme} onToggleTheme={toggle} />
+            <Layout >
+                <GridField />
+                
+                <TopBar theme={theme} onToggleTheme={toggle} />
 
-            <main>
-                <Hero />
-                <About />
-                <Skills />
-                <Projects />
-                <Experience />
-                <Contact />
-            </main>
+                <main>
+                    <Hero />
+                    <About />
+                    <Skills />
+                    <Projects />
+                    <Experience />
+                    <Contact />
+                </main>
 
-            <Footer /> 
+                <Footer /> 
+            </Layout>
         </>
     )
 }

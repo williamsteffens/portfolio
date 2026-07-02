@@ -10,6 +10,7 @@ export default function ThemeToggle({ theme, onToggle }) {
         transition-colors duration-200
         focus-visible:outline focus-visible:outline-rust
         cursor-pointer
+        w-22
       "
     >
       {theme === "dark" ? "☀ LIGHT" : "◑ DARK"}

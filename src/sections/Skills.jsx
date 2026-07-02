@@ -29,10 +29,10 @@ export default function Skills() {
         transition-colors duration-300
       "
     >
-      <Eyebrow>Survey</Eyebrow>
+      <Eyebrow>Capabilities</Eyebrow>
 
       <h2 className="font-display font-extrabold text-[clamp(34px,5vw,64px)] leading-[0.95] mb-8 text-ink dark:text-paper">
-        CAPABILITIES
+        SKILLS
       </h2>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 border border-ink dark:border-dark-border divide-x-2 divide-ink dark:divide-dark-border">

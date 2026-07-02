@@ -15,7 +15,7 @@ export default function TopBar({ theme, onToggleTheme }) {
       </span>
 
       <div className="hidden sm:flex gap-8 font-mono text-2xs tracking-widest2 uppercase">
-        {["About", "Work", "Skills", "Experience", "Contact"].map((label) => (
+        {["About", "Skills", "Projects", "Experience", "Contact"].map((label) => (
           <a
             key={label}
             href={`#${label.toLowerCase()}`}

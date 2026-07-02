@@ -8,13 +8,13 @@ const experience = [
 export default function Experience() {
     return (
         <section
-            id="route"
+            id="experience"
             className="
         section-rule relative z-1 px-6 md:px-10 py-16 md:py-20
         bg-ink dark:bg-black text-paper
         transition-colors duration-300"
         >
-            <Eyebrow>Route</Eyebrow>
+            <Eyebrow>SO FAR</Eyebrow>
 
             <h2 className="font-display font-extrabold text-[clamp(34px,5vw,64px)] leading-[0.95] mb-10 text-paper">
                 EXPERIENCE

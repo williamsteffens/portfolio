@@ -4,11 +4,11 @@ import projects from "../data/projects.json";
 
 export default function Projects() {
     return (
-        <section id="work" className="section-rule relative z-1 px-6 md:px-10 py-16 md:py-20">
-            <Eyebrow>Charted</Eyebrow>
+        <section id="projects" className="section-rule relative z-1 px-6 md:px-10 py-16 md:py-20">
+            <Eyebrow>SELECTED WORK</Eyebrow>
 
             <h2 className="font-display font-extrabold text-[clamp(34px,5vw,64px)] leading-[0.95] mb-8 text-ink dark:text-paper">
-                SELECTED WORK
+                PROJECTS
             </h2>
 
             <div className="flex flex-col gap-6">

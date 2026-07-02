@@ -16,9 +16,14 @@ const About = () => {
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-12">
-                <p className="text-[17px] leading-[1.75] max-w-[54ch] text-ink dark:text-paper/90">
-                    bio
-                </p>
+                <div className="text-[17px] leading-[1.75] max-w-[54ch] space-y-4 text-ink dark:text-paper/90">
+                    <p>
+                        I've always enjoyed learning a little bit of everything. Whether it's building web applications, designing APIs, brewing beer and mead, climbing boulders, or exploring underwater, I'm happiest when I'm picking up new skills and figuring out how things work.
+                    </p>
+                    <p>
+                        That curiosity led me to earn my BSc in Software Technology from DTU and continues to drive how I approach software development. While backend development is where I feel most at home, I enjoy understanding the whole system and collaborating across the stack to build reliable, maintainable software.
+                    </p>
+                </div>
 
                 <dl className="font-mono text-xs self-start mt-1">
                     {meta.map(({ k, v }) => (

@@ -58,10 +58,9 @@
 }
 
 #root {
-  width: 1126px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  /* text-align: center; */
   min-height: 100svh;
   display: flex;
   flex-direction: column;
@@ -78,6 +77,10 @@
   body {
     @apply font-body bg-paper text-ink dark:bg-dark-bg dark:text-paper;
     transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  section {
+    @apply relative w-full max-w-6xl mx-auto;
   }
 
   /* Blueprint grid — the signature full-page device */

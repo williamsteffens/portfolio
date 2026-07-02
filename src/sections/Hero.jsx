@@ -1,8 +1,8 @@
 const Hero = () => {
     return (
-        <header className="px-10 pt-10 relative z-10">
+        <header className="max-w-6xl mx-auto px-10 pt-10 relative z-10">
             <h1 className="font-body uppercase font-black leading-[0.85] text-[clamp(48px,10vw,160px)] mt-6">
-                William<br /> <p className="text-rust">Steffens</p>
+                William<br /> <span className="text-rust">Steffens</span>
             </h1>
 
             <div className="grid md:grid-cols-[1fr_260px] gap-8 mt-6 border-t border-ink pt-6">

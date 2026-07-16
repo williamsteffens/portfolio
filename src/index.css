@@ -71,7 +71,7 @@
 
 ::selection {
   color: white;
-  background: var(--rust-color);
+  background: color-mix(in srgb, var(--rust-color) 60%, transparent);
 }
 
 

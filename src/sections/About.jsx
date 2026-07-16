@@ -3,6 +3,7 @@ import Eyebrow from "../components/layout/Eyebrow";
 const About = () => {
     const meta = [
         { k: "BASED", v: 'Copenhagen' },
+        { k: "STUDYING AT", v: 'AAU' },
         { k: "FOCUS", v: 'Fullstack' },
         { k: "AVAILABLE", v: "Open to opportunities" },
     ];

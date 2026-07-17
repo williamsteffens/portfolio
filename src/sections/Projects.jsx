@@ -1,6 +1,8 @@
 import Eyebrow from "../components/layout/Eyebrow";
 import CropMarks from "../components/layout/CropMarks";
 import projects from "../data/projects.json";
+import GithubIcon from "../assets/github-svgrepo-com.svg?react";
+import ExternalIcon from "../assets/external-link-svgrepo-com.svg?react";
 
 export default function Projects() {
     return (
@@ -10,6 +12,16 @@ export default function Projects() {
             <h2 className="font-display font-extrabold text-[clamp(34px,5vw,64px)] leading-[0.95] mb-8 text-ink dark:text-paper">
                 PROJECTS
             </h2>
+
+            <div className="leading-relaxed max-w-3xl mb-8">
+                These are a few selected projects. For the full archive, including smaller
+                experiments and ongoing work, visit <a
+                    href="https://github.com/williamsteffens"
+                    className="font-bold text-rust hover:text-rust/80 transition-colors"
+                >
+                    my GitHub
+                </a>.
+            </div>
 
             <div className="flex flex-col gap-6">
                 {projects.map((p) => (
@@ -45,6 +57,33 @@ export default function Projects() {
                             <p className="text-[14.5px] leading-relaxed max-w-[60ch] text-ink dark:text-paper/80">
                                 {p.desc}
                             </p>
+                            {p.links && (
+                                <div className="mt-5 flex flex-wrap gap-3">
+                                    {p.links?.demo && (
+                                        <a
+                                            href={p.links.demo}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-rust hover:text-rust/80 transition-colors"
+                                        >
+                                            <ExternalIcon className="w-5 h-5 text-ink dark:text-paper" />
+                                            Live Demo
+                                        </a>
+                                    )}
+
+                                    {p.links?.github && (
+                                        <a
+                                            href={p.links.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-rust hover:text-rust/80 transition-colors"
+                                        >
+                                            <GithubIcon className="w-5 h-5 text-ink dark:text-paper" />
+                                            GitHub
+                                        </a>
+                                    )}
+                                </div>
+                            )}
                         </div>
 
                         {/* Stack chips */}

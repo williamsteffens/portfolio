@@ -28,8 +28,8 @@ const About = () => {
         hidden: {},
         visible: {
             transition: {
-                delayChildren: 0.4,
-                staggerChildren: 0.35,
+                delayChildren: 0.3,
+                staggerChildren: 0.15,
             },
         },
     };
@@ -37,13 +37,13 @@ const About = () => {
     const metaItem = {
         hidden: {
             opacity: 0,
-            x: 60,
+            x: 40,
         },
         visible: {
             opacity: 1,
             x: 0,
             transition: {
-                duration: 0.9,
+                duration: 0.6,
                 ease: "easeOut",
             },
         },

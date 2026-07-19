@@ -48,7 +48,7 @@ export default function Skills() {
                             bg-paper-dark dark:bg-dark-surface
                             transition-colors duration-300
                             border-2 border-ink dark:border-dark-border
-                            -ml-[2px] -mt-[2px]
+                            -ml-0.5 -mt-0.5
                         "
                     >
                         <span className="font-mono text-2xs tracking-widest2 uppercase text-rust mb-4">

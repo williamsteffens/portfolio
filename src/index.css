@@ -123,11 +123,6 @@
     @apply bottom-0 right-0 border-b-2 border-r-2;
   }
 
-  /* Section divider rule */
-  .section-rule {
-    @apply border-t-2 border-ink dark:border-dark-border;
-  }
-
   /* Stat row in mono */
   .meta-row {
     @apply flex justify-between border-b border-dashed border-line dark:border-dark-border py-1.5 text-xs font-mono;

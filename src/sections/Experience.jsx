@@ -15,7 +15,7 @@ export default function Experience() {
         <section
             id="experience"
             className="
-        section-rule relative z-1 px-6 md:px-10 py-16 md:py-20
+        relative z-1 px-6 md:px-10 py-16 md:py-20
         bg-ink dark:bg-black text-paper
         transition-colors duration-300"
         >

@@ -24,7 +24,7 @@ export default function Skills() {
     <section
       id="skills"
       className="
-        section-rule relative z-1 px-6 md:px-10 py-16 md:py-20
+         relative z-1 px-6 md:px-10 py-16 md:py-20
         bg-paper-dark dark:bg-dark-surface
         transition-colors duration-300
       "

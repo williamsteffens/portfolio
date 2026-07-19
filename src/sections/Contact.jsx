@@ -9,7 +9,7 @@ const links = [
 
 const Contact = () => {
     return (
-        <section id="contact" className="section-rule relative z-1 px-6 md:px-10 py-16 md:py-20">
+        <section id="contact" className="relative z-1 px-6 md:px-10 py-16 md:py-20">
             <Eyebrow>Contact</Eyebrow>
 
             <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 items-end">

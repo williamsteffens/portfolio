@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import useTheme from "./hooks/useTheme";
 import Layout from "./components/layout/SimpleBar";
 import GridField from "./components/layout/GridField";
@@ -9,15 +10,17 @@ import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import ScrollProgressBar from "./components/ProgressBar";
 
 const Portfolio = () => {
     const { theme, toggle } = useTheme();
+    const layoutRef = useRef(null);
 
     return (
         <>
-            <Layout >
+            <ScrollProgressBar scrollRef={layoutRef} />
+            <Layout ref={layoutRef}>
                 <GridField />
-                
                 <TopBar theme={theme} onToggleTheme={toggle} />
 
                 <main>

@@ -66,7 +66,7 @@ export default function Projects() {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-rust hover:text-rust/80 transition-colors"
                                         >
-                                            <ExternalIcon className="w-5 h-5 text-ink dark:text-paper" />
+                                            <ExternalIcon className="w-5 h-5 text-ink dark:text-paper overflow-visible" />
                                             Live Demo
                                         </a>
                                     )}
@@ -78,7 +78,7 @@ export default function Projects() {
                                             rel="noopener noreferrer"
                                             className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-rust hover:text-rust/80 transition-colors"
                                         >
-                                            <GithubIcon className="w-5 h-5 text-ink dark:text-paper" />
+                                            <GithubIcon className="w-5 h-5 text-ink dark:text-paper overflow-visible" />
                                             GitHub
                                         </a>
                                     )}

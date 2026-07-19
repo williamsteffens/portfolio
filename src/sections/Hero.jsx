@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
     return (
-        <header className="max-w-6xl mx-auto px-6 md:px-10 pt-12 pb-20 relative z-10">
+        <header className="max-w-6xl mx-auto px-6 md:px-10 pt-12 pb-10 relative z-10">
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const ScrollProgressBar = ({scrollRef}) => {
+const ScrollProgressBar = ({simpleBar}) => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
@@ -19,24 +19,31 @@ const ScrollProgressBar = ({scrollRef}) => {
 
         // return () => window.removeEventListener("scroll", handleScroll);
 
-        const simpleBarElement = scrollRef?.current?.getScrollElement();
-
-        if (!simpleBarElement) 
+        const scrollElement = simpleBar?.getScrollElement();
+         
+        if (!scrollElement)
             return;
 
         const handleScroll = () => {
-            const scrollTop = simpleBarElement.scrollTop;
-            const scrollHeight =
-                simpleBarElement.scrollHeight - simpleBarElement.clientHeight;
+            const { scrollTop, scrollHeight, clientHeight } = scrollElement;
 
-            const percent = (scrollTop / scrollHeight) * 100;
+            const maxScroll = scrollHeight - clientHeight;
+
+            
+            const percent = Math.min(
+                100,
+                Math.max(0, (scrollTop / maxScroll) * 100)
+            );
+
             setProgress(percent);
         };
 
-        simpleBarElement.addEventListener("scroll", handleScroll);
+        scrollElement.addEventListener("scroll", handleScroll, {
+            passive: true,
+        });
 
-        return () => simpleBarElement.removeEventListener("scroll", handleScroll);
-    }, []);
+        return () => scrollElement.removeEventListener("scroll", handleScroll);
+    }, [simpleBar]);
 
     return (
         <div className="fixed top-0 left-0 z-99999 h-1 w-full bg-rust/60 dark:bg-dark-muted transition-colors duration-300">

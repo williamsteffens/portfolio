@@ -21,7 +21,7 @@ export default function Footer() {
       px-6 md:px-10 py-4
       border-t-2 border-ink dark:border-dark-border
       font-mono text-[10.5px] tracking-widest2 uppercase
-      text-rust
+      text-rust/70
       bg-paper dark:bg-dark-bg
       transition-colors duration-300
     ">

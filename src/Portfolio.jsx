@@ -16,10 +16,8 @@ import Loader from "./components/Loader";
 
 const Portfolio = () => {
     const [isLoading, setIsLoading] = useState(true);
-    const { theme, toggle } = useTheme();
     const [simpleBar, setSimpleBar] = useState(null);
-
-    const [progress, setProgress] = useState(0);
+    const { theme, toggle } = useTheme();
 
     useEffect(() => {
         const finishLoading = () => {
@@ -49,10 +47,15 @@ const Portfolio = () => {
                 <GridField />
                 {!isLoading && (
                     <>
-                        <TopBar theme={theme} onToggleTheme={toggle} />
+                        <TopBar 
+                            theme={theme}
+                            onToggleTheme={toggle}
+                            simpleBar={simpleBar} 
+                        />
+
                         <ScrollProgressBar simpleBar={simpleBar} />
 
-                        <main>
+                        <main className="pt-18">
                             <Hero />
                             <About />
                             <Skills />

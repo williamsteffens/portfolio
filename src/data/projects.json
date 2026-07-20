@@ -1,35 +1,45 @@
 [
     {
         "id": "01",
-        "title": "LEDGERLINE",
-        "tag": "Distributed ledger reconciliation engine",
+        "title": "Lnk",
+        "tag": "A Fullstack URL Shortener",
         "stack": [
-            "Go",
-            "Postgres",
-            "Kafka"
+            "Spring Boot",
+            "React + Vite",
+            "PostgreSQL"
         ],
-        "desc": "Rebuilt a bank's overnight settlement pipeline to run incrementally instead of nightly — cut reconciliation time from 6 hours to 40 minutes across 14 currencies."
+        "desc": "A fullstack URL shortening platform with custom aliases, link analytics, and a responsive dashboard. Built with a Spring Boot REST API, React frontend, and PostgreSQL persistence.",
+        "links": {
+            "demo": "https://lnk.ryanb.dev",
+            "github": "https://github.com/williamsteffens/url_shortener"
+        }
     },
     {
         "id": "02",
-        "title": "FIELDNOTE",
-        "tag": "Offline-first survey toolkit",
+        "title": "Keeping Tabs",
+        "tag": "A Shared Expense Tracking App",
         "stack": [
-            "React Native",
-            "CRDT",
-            "SQLite"
+            "Spring Boot",
+            "React + Vite",
+            "PostgreSQL"
         ],
-        "desc": "Conflict-free sync layer for researchers working without signal. Used across nine field stations to merge edits from 40+ devices with zero data loss."
+        "desc": "A collaborative expense management application for tracking shared bills, balances, and payments between groups. Designed to simplify splitting costs and keeping everyone accountable.",
+        "links": {
+            "demo": "https://lnk.ryanb.dev",
+            "github": "https://github.com/williamsteffens/url_shortener"
+        }
     },
     {
         "id": "03",
-        "title": "ROUTEMARK",
-        "tag": "Internal developer platform",
+        "title": "Deadlock Arena Gamemode",
+        "tag": "A Custom Multiplayer Game Mode",
         "stack": [
-            "TypeScript",
-            "Kubernetes",
-            "Terraform"
+            "C#",
+            "SQLite"
         ],
-        "desc": "Self-service deploy tooling that took a 12-step runbook down to one command, and cut average lead time for change from two days to under an hour."
+        "desc": "A custom multiplayer gamemode featuring matchmaking, player progression, and persistent data storage. Built with C# and SQLite to manage game state and player statistics.",
+        "links": {
+            "github": "https://github.com/williamsteffens/url_shortener"
+        }
     }
 ]

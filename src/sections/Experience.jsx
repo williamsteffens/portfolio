@@ -5,7 +5,7 @@ import ExperienceItem from "../components/ExperienceCard";
 const experience = [
     {
         year: "2022",
-        title: "Student Software Engineer – Continia",
+        title: "Student Software Engineer @ Continia Software",
         desc: "Developed and maintained features for document capture solutions. \
             Collaborated with cross-functional teams to deliver new functionality and improvements. \
             Contributed to bug fixes, testing, and code reviews in an agile development environment." 

@@ -24,7 +24,7 @@ const cardContainer = {
     hidden: {},
     visible: {
         transition: {
-            delayChildren: 0.75,
+            delayChildren: 0.50,
             staggerChildren: 0.2,
         },
     },

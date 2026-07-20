@@ -96,12 +96,12 @@
 
   /* Blueprint grid — the signature full-page device */
   .grid-field line {
-    stroke: rgba(27, 36, 51, 0.1);
+    stroke: rgba(27, 36, 51, 0.125);
     stroke-width: 0.06;
   }
 
   .dark .grid-field line {
-    stroke: rgba(239, 233, 219, 0.05);
+    stroke: rgba(239, 233, 219, 0.075);
   }
 }
 

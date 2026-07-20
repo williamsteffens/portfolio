@@ -34,18 +34,14 @@ const GridField = () => {
                     y2={line.y2}
                     stroke="currentColor"
                     initial={{
-                        opacity: 0,
                         pathLength: 0,
                     }}
                     animate={{
-                        opacity: 1,
                         pathLength: 1,
                     }}
                     transition={{
-                        duration: 1.2,
-                        delay: line.type === "v"
-                            ? i * 0.05
-                            : 0.6 + i * 0.05,
+                        duration: 0.7,
+                        delay: i * 0.13
                     }}
                 />
             ))}

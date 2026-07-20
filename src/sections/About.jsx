@@ -54,16 +54,8 @@ const About = () => {
             id="about"
             className="relative z-1 px-6 md:px-10 py-16 md:py-20"
         >
-            <motion.div
-                variants={reveal}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-            >
-                <Eyebrow>WHOAMI</Eyebrow>
-            </motion.div>
-
-
+            <Eyebrow>WHOAMI</Eyebrow>
+            
             <motion.h2
                 variants={reveal}
                 initial="hidden"

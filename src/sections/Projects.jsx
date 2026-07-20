@@ -58,14 +58,7 @@ export default function Projects() {
             id="projects"
             className="relative z-1 px-6 md:px-10 py-16 md:py-20"
         >
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-            >
-                <Eyebrow>SELECTED WORK</Eyebrow>
-            </motion.div>
-
+            <Eyebrow>SELECTED WORK</Eyebrow>
 
             <motion.h2
                 initial={{ opacity: 0, y: 30 }}

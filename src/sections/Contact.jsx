@@ -5,7 +5,7 @@ const links = [
     { label: "Email", href: `mailto:${'william.f.f.steffens@gmail.com'}`, value: 'william.f.f.steffens@gmail.com' },
     { label: "GitHub", href: `https://github.com/${'williamsteffens'}`, value: 'williamsteffens' },
     { label: "LinkedIn", href: `https://linkedin.com/in/${'williamffsteffens'}`, value: 'williamffsteffens' },
-    { label: "Resume", href: "/william_steffens_cv.pdf", value: "DOWNLOAD ↓"},
+    { label: "Resume", href: "/william_steffens_cv.pdf", value: "DOWNLOAD ↓" },
 ];
 
 const reveal = {
@@ -50,20 +50,13 @@ const item = {
 
 const Contact = () => {
     return (
-        <section 
-            id="contact" 
+        <section
+            id="contact"
             className="relative z-1 px-6 md:px-10 py-16 md:py-20"
         >
-            <motion.div
-                variants={reveal}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.2 }}
-            >
-                <Eyebrow>Contact</Eyebrow>
-            </motion.div>
+            <Eyebrow>Contact</Eyebrow>
 
-<div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 items-end">
+            <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-10 items-end">
                 <motion.h2
                     variants={reveal}
                     initial="hidden"

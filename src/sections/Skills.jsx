@@ -55,15 +55,7 @@ export default function Skills() {
                 transition-colors duration-300
             "
         >
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-            >
-                <Eyebrow>Capabilities</Eyebrow>
-            </motion.div>
-
+            <Eyebrow>Capabilities</Eyebrow>
 
             <motion.h2
                 initial={{ opacity: 0, y: 30 }}

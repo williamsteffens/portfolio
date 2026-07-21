@@ -59,7 +59,7 @@ const Portfolio = () => {
                             <Hero />
                             <About />
                             <Skills />
-                            <Projects />
+                            {/* <Projects /> */}
                             <Experience />
                             <Contact />
                         </main>

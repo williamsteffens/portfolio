@@ -77,7 +77,7 @@ const Loader = () => {
             className="
                 fixed inset-0 z-50 bg-transparent
                 flex items-center justify-center
-                select-none
+                select-none pointer-events-none
             "
         >
             <div className="relative overflow-hidden">

@@ -92,6 +92,7 @@ const Loader = () => {
                         h-full
                         bg-ink
                         dark:bg-paper
+                        z-100
                     "
                 />
 

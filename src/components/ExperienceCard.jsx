@@ -1,4 +1,4 @@
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 
 const timelineItem = {
     hidden: {
@@ -9,40 +9,26 @@ const timelineItem = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 0.9,
-            delay: 0.4,
+            duration: 0.6,
             ease: "easeOut",
         },
     },
 };
 
 const ExperienceItem = ({ item }) => {
-    const dotControls = useAnimation();
-    const cardControls = useAnimation();
-
-    const startAnimation = async () => {
-        await cardControls.start("visible");
-
-        await dotControls.start({
-            scale: 1,
-            transition: {
-                duration: 0.4,
-                type: "spring",
-            },
-        });
-    };
-
     return (
         <motion.div
-            initial="hidden"
-            animate={cardControls}
             variants={timelineItem}
-            onViewportEnter={startAnimation}
             className="relative pl-8 pb-10 last:pb-0"
         >
             <motion.span
                 initial={{ scale: 0 }}
-                animate={dotControls}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                    duration: 0.4,
+                    type: "spring",
+                }}
                 className="
                     absolute -left-1.25 top-1
                     w-3 h-3 rounded-full
@@ -64,6 +50,6 @@ const ExperienceItem = ({ item }) => {
             </p>
         </motion.div>
     );
-}
+};
 
 export default ExperienceItem;

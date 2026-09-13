@@ -38,6 +38,15 @@ const timelineLine = {
     },
 };
 
+const timelineVariants = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.4,
+        },
+    },
+};
+
 const Experience = () => {
     return (
         <section
@@ -61,8 +70,13 @@ const Experience = () => {
             </motion.h2>
 
 
-            <div className="ml-2 relative">
-
+            <motion.div
+                className="ml-2 relative"
+                variants={timelineVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
                 {/* Animated timeline */}
                 <motion.div
                     variants={timelineLine}
@@ -81,7 +95,7 @@ const Experience = () => {
                 {experience.map((item) => (
                     <ExperienceItem key={item.year} item={item} />
                 ))}
-            </div>
+            </motion.div>
         </section>
     );
 }

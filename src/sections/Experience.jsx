@@ -4,11 +4,24 @@ import ExperienceItem from "../components/ExperienceCard";
 
 const experience = [
     {
+        year: "2026",
+        title: "Volunteer @ Coding Pirates",
+        desc: "Volunteer at Coding Pirates hosted by Microsoft Lyngby, introducing children and young people \
+        to programming and computational thinking \
+        through hands-on projects. Helped participants develop problem-solving skills, \
+        explore technology, and build confidence in coding." ,
+    },
+    {
         year: "2022",
-        title: "Student Software Engineer @ Continia Software",
-        desc: "Developed and maintained features for document capture solutions. \
-            Collaborated with cross-functional teams to deliver new functionality and improvements. \
-            Contributed to bug fixes, testing, and code reviews in an agile development environment." 
+        title: "Software Engineer @ Continia Software",
+        desc: "I have contributed to the development of Continia’s automatic OCR-based invoice system. As part of an agile cross-functional team, \
+            I have been involved in the entire iterative delivery process of designing new features, implementing, reviewing, writing automated tests, \
+            debugging and maintaining production systems."
+    },
+    {
+        year: "2021",
+        title: "Student Assistant @ DTU",
+        desc: "I was fully responsible for maintaining the university website. I developed and integrated new features while resolving technical issues to ensure a stable platform."
     },
 ];
 
@@ -31,7 +44,7 @@ const Experience = () => {
             id="experience"
             className="
                 relative z-1 px-6 md:px-10 py-16 md:py-20
-                bg-ink dark:bg-black text-paper
+                bg-paper-dark dark:bg-black text-ink dark:text-paper
                 transition-colors duration-300
             "
         >
@@ -42,7 +55,7 @@ const Experience = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="font-display font-extrabold text-[clamp(34px,5vw,64px)] leading-[0.95] mb-10 text-paper"
+                className="font-display font-extrabold text-[clamp(34px,5vw,64px)] leading-[0.95] mb-10 "
             >
                 EXPERIENCE
             </motion.h2>
@@ -60,7 +73,7 @@ const Experience = () => {
                         absolute left-0 top-0 bottom-0
                         border-l-[1.5px]
                         border-dashed
-                        border-paper/25
+                        border-ink dark:border-paper/33
                         origin-top
                     "
                 />

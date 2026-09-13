@@ -50,10 +50,10 @@ const Hero = () => {
                         </p>
 
                         <p className="text-sm leading-relaxed max-w-xl mt-6">
-                            BSc Software Technology graduate from DTU and currently studying for an MSc in Software at AAU. I enjoy working across the
-                            stack — designing backend services, APIs, and user interfaces.
-                            Currently looking for Full-Stack or Backend roles where I can
-                            keep building, learning, and solving challenging problems.
+                            Driven software engineer with a passion for building reliable systems. My experience with various programming languages and 
+                            paradigms has allowed me to develop scalable solutions, seamless API integrations and maintainable software that solves real-world
+                            problems. As a colleague, I am responsible, disciplined and team-oriented. I enjoy tackling complex challenges, learning new
+                            technologies and continuously improving the quality and performance of the systems I build.
                         </p>
                     </div>
 
@@ -69,7 +69,7 @@ const Hero = () => {
 
                         <div className="space-y-4">
                             <div>
-                                <p className="text-paper/50">CURRENTLY</p>
+                                <p className="text-paper/50">EDUCATION</p>
                                 <p className="mt-1">MSc Software @ AAU</p>
                             </div>
 

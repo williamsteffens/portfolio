@@ -47,7 +47,7 @@ const ExperienceItem = ({ item }) => {
                     absolute -left-1.25 top-1
                     w-3 h-3 rounded-full
                     bg-rust
-                    border-2 border-paper
+                    border-2 border-dark-border dark:border-paper
                 "
             />
 
@@ -55,11 +55,11 @@ const ExperienceItem = ({ item }) => {
                 {item.year}
             </p>
 
-            <h3 className="font-display font-bold text-2xl leading-tight mb-2 text-paper">
+            <h3 className="font-display font-bold text-2xl leading-tight mb-2 text-ink dark:text-paper">
                 {item.title}
             </h3>
 
-            <p className="text-sm leading-relaxed max-w-[60ch] text-paper/75">
+            <p className="text-sm leading-relaxed max-w-[60ch] text-ink/75 dark:text-paper/75">
                 {item.desc}
             </p>
         </motion.div>

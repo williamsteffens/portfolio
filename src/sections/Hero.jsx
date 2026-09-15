@@ -70,13 +70,20 @@ const Hero = () => {
                         <div className="space-y-4">
                             <div>
                                 <p className="text-paper/50">EDUCATION</p>
-                                <p className="mt-1">MSc Software @ AAU</p>
+                                <p className="mt-1">· MSc Software @ AAU</p>
+                                <p className="mt-1">· BSc Software Technology @ DTU</p>
                             </div>
 
                             <div>
                                 <p className="text-paper/50">FOCUS</p>
                                 <p className="mt-1">
-                                    Backend · APIs · Cloud
+                                    · Backend
+                                </p>
+                                <p className="mt-1">
+                                    · APIs
+                                </p>
+                                <p className="mt-1">
+                                    · Performance
                                 </p>
                             </div>
 

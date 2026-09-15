@@ -8,7 +8,7 @@ const experience = [
         title: "Volunteer @ Coding Pirates",
         desc: "Volunteer at Coding Pirates hosted by Microsoft Lyngby, introducing children and young people \
         to programming and computational thinking \
-        through hands-on projects. Helped participants develop problem-solving skills, \
+        through hands-on projects. Helping participants develop problem-solving skills, \
         explore technology, and build confidence in coding." ,
     },
     {

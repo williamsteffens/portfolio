@@ -5,6 +5,11 @@ import ExperienceItem from "../components/ExperienceCard";
 const experience = [
     {
         year: "2026",
+        title: "Student AI & Automation Engineer @ FDM",
+        desc: "Enabling departments across the organization through the development, implementation, and maintenance of AI and automation solutions, while contributing to AI security and governance initiatives." ,
+    },
+    {
+        year: "2026",
         title: "Volunteer @ Coding Pirates",
         desc: "Volunteer at Coding Pirates hosted by Microsoft Lyngby, introducing children and young people \
         to programming and computational thinking \
